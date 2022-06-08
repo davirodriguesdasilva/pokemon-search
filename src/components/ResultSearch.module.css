@@ -1,0 +1,21 @@
+.result{
+    margin-top: 30px;
+    text-align: center;
+}
+.result h3{
+    font-size: 25px;
+}
+.result p{
+    font-size: 20px;
+}
+.result h2{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.result img{
+    width: 150px;
+    height: auto;
+}

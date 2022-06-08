@@ -1,1 +1,49 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+body{
+  background-color: #d9d9d9;
+}
+
+#root{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.app{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+}
+
+.app h1{
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.app input{
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 12px;
+  border-color: transparent;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, .1);
+}
+
+.app > img{
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+}
