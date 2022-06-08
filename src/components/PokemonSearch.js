@@ -4,7 +4,7 @@ import { useState } from 'react';
 function PokemonSearch({pokemonValues}){
 
     //FUNCTIONS TO GET THE DATA FROM THE API
-    let getPokemonImage = async (urlParam) => {
+    const getPokemonImage = async (urlParam) => {
         const response = await axios.get(urlParam)
         return response.data.sprites 
     }

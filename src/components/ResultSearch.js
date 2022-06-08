@@ -6,7 +6,7 @@ import style from './ResultSearch.module.css'
 function ResultSearch({cityName}){
     
     //FUNCTIONS TO GET THE DATA FROM THE API
-    let getCityStatus = async (nameParam) => {
+    const getCityStatus = async (nameParam) => {
         const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?units=metric&lang=pt_br&q=${nameParam}&appid=6899afdcd4372971c0a4f2b300368337`)
         return {
             name: response.data.name,
@@ -14,13 +14,13 @@ function ResultSearch({cityName}){
             temp: response.data.main.temp,
         }
     }
-    let getPokemonType = async (typeParam) => {
+    const getPokemonType = async (typeParam) => {
         const response = await axios.get(`https://pokeapi.co/api/v2/type/${typeParam}`)
         return response.data.pokemon
     }
     
     //FUNCTION TO GET THE POKEMON TYPE
-    function returnPokemonType(climate, temperature){
+    const returnPokemonType = (climate, temperature) => {
         if(climate === 'garoa de leve intensidade' || climate === 'chuva leve' || climate === 'chuva moderada' || climate === 'chuva'){
             return 'electric'
         }
